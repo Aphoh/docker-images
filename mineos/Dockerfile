@@ -1,5 +1,6 @@
 FROM hexparrot/mineos:node-wily
 EXPOSE 25560-25564
+RUN chown -R mcserver:mcserver /var/games/minecraft
 LABEL org.freenas.interactive="true" \
       org.freenas.version="1" \
       org.freenas.expose-ports-at-host="true" \
